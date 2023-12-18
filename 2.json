@@ -1,0 +1,15 @@
+{
+    "attributes": ["A", "B", "C", "D", "E"],
+    "functional_dependencies": [
+      { "lhs": ["A"], "rhs": ["B", "C"] },
+      { "lhs": ["B"], "rhs": ["D"] },
+      { "lhs": ["C", "D"], "rhs": ["E"] }
+    ],
+    "super_keys": [
+      ["A"],
+      ["A", "B"],
+      ["A", "C"]
+    ],
+    "primary_key": ["A"]
+  }
+ 

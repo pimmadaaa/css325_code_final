@@ -1,0 +1,13 @@
+{
+    "attributes": ["StudentID", "Course", "Instructor", "InstructorOffice"],
+    "functional_dependencies": [
+      {"lhs": ["StudentID"], "rhs": ["Course", "Instructor"]},
+      {"lhs": ["Instructor"], "rhs": ["InstructorOffice"]}
+    ],
+    "super_keys": [
+      ["StudentID"],
+      ["StudentID", "Course"],
+      ["Instructor"]
+    ],
+    "primary_key": ["StudentID"]
+  }

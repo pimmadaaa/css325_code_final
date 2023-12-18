@@ -1,0 +1,13 @@
+{
+    "attributes": ["EmployeeID", "FirstName", "LastName", "Department", "Salary"],
+    "functional_dependencies": [
+      {"lhs": ["EmployeeID"], "rhs": ["FirstName", "LastName", "Department", "Salary"]},
+      {"lhs": ["Department"], "rhs": ["EmployeeID"]},
+      {"lhs": ["EmployeeID"], "rhs": ["Salary"]}
+    ],
+    "super_keys": [
+      ["EmployeeID"],
+      ["EmployeeID", "Department"]
+    ],
+    "primary_key": ["EmployeeID"]
+  }
